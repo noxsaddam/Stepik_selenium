@@ -21,9 +21,9 @@ try:
     print(answer)
     time.sleep(5)
 
-#
-# except Exception as e:
-#     print(e)
+
+except Exception as e:
+    print(e)
 
 finally:
     browser.quit()
