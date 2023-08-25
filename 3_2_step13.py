@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import unittest
+import pytest
 
 
 def get_text(url):
