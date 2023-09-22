@@ -6,6 +6,6 @@ url = " http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
 def test_add_to_basket(browser):
     browser.get(url)
-    # time.sleep(30)
+    time.sleep(3)
     button = browser.find_elements(By.CLASS_NAME, 'btn.btn-lg.btn-primary.btn-add-to-basket')
-    assert False if not button else True, ' no button'
+    assert button, 'no button'
